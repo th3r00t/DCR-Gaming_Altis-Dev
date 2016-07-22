@@ -261,7 +261,8 @@ class Clothing {
         license = "";
         side = "civ";
         uniforms[] = {
-            { "NONE", "Remove Uniform", 0, { "", "", -1 } }
+            { "NONE", "Remove Uniform", 0, { "", "", -1 } },
+            { "U_C_Poor_1", "", 25, { "", "", -1 } }
         };
         headgear[] = {
             { "NONE", "Remove Hat", 0, { "", "", -1 } }
