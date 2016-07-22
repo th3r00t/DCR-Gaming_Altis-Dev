@@ -18,7 +18,7 @@ _i=0;
 
 StartProgress = false;
 
-//[] execVM "briefing.sqf"; //Load Briefing
-//[] execVM "KRON_Strings.sqf";
+[] execVM "briefing.sqf"; //Load Briefing
+[] execVM "KRON_Strings.sqf";
 
 StartProgress = true;
