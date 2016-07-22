@@ -16,7 +16,8 @@ $RECYCLE.BIN/
 
 # Windows shortcuts
 *.lnk
-
+# ARMA PBO FILES
+*.pbo
 # =========================
 # Operating System Files
 # =========================
