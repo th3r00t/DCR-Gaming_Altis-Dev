@@ -221,7 +221,7 @@ class WeaponShops {
         items[] = {
             { "hgun_ACPC2_F", "", 17500, -1 },
             { "SMG_02_ACO_F", "", 15000, -1 },
-            { "arifle_SPAR_01_blk_F", "", 60000, -1 },
+            { "arifle_SPAR_03_blk_F", "", 60000, -1 },
             { "srifle_EBR_F", "", 80000, -1 },
             { "arifle_MXC_F", "", 30000, 5000 },
             { "arifle_Mk20C_plain_F", "", 45000, 5000 },
