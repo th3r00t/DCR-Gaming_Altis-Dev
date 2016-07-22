@@ -5,26 +5,28 @@ class EditorData
 	angleGridStep=0.2617994;
 	scaleGridStep=1;
 	autoGroupingDist=10;
-	toggles=1;
+	toggles=1025;
 	class ItemIDProvider
 	{
-		nextID=1174;
+		nextID=1222;
 	};
 	class MarkerIDProvider
 	{
-		nextID=222;
+		nextID=223;
 	};
 	class Camera
 	{
-		pos[]={8446.5459,108.45621,25211.445};
-		dir[]={0,-0.70710683,0.70710683};
-		up[]={0,0.70710677,0.70710677};
+		pos[]={11270.635,75.933456,15650.282};
+		dir[]={0,-0.70710677,0.70710683};
+		up[]={0,0.70710677,0.70710671};
 		aside[]={0.99999994,0,-0};
 	};
 };
 binarizationWanted=0;
 addons[]=
 {
+	"A3_Ui_F",
+	"A3_Missions_F_Beta",
 	"A3_Structures_F_Civ_Garbage",
 	"A3_Structures_F_Civ_Constructions",
 	"A3_Signs_F",
@@ -54,18 +56,113 @@ addons[]=
 	"A3_Weapons_F_Ammoboxes",
 	"A3_Structures_F_EPA_Civ_Camping",
 	"A3_Structures_F_Civ_Accessories",
-	"A3_Weapons_F_Vests",
-	"a3_weapons_f",
-	"A3_Weapons_F_CSAT",
+	"A3_Weapons_F",
 	"A3_Structures_F_EPB_Items_Military",
 	"A3_Structures_F_EPA_Items_Vessels",
 	"A3_Structures_F_EPA_Items_Tools",
 	"A3_Structures_F_Mil_Flags",
-	"A3_Characters_F_BLUFOR",
-	"a3_characters_f",
-	"A3_Characters_F_Civil",
-	"A3_Characters_F_OPFOR",
-	"A3_Characters_F_EPC"
+	"A3_Characters_F",
+	"A3_Characters_F_Exp_Civil",
+	"A3_Structures_F_Mil_Offices",
+	"A3_Structures_F_Mil_Barracks"
+};
+class AddonsMetaData
+{
+	class List
+	{
+		items=13;
+		class Item0
+		{
+			className="A3_Ui_F";
+			name="Arma 3 - User Interface";
+			author="Bohemia Interactive";
+			url="http://www.arma3.com";
+		};
+		class Item1
+		{
+			className="A3_Missions_F_Beta";
+			name="Arma 3 Beta - Playable Content";
+			author="Bohemia Interactive";
+			url="http://www.arma3.com";
+		};
+		class Item2
+		{
+			className="A3_Structures_F";
+			name="Arma 3 - Buildings and Structures";
+			author="Bohemia Interactive";
+			url="http://www.arma3.com";
+		};
+		class Item3
+		{
+			className="A3_Signs_F";
+			name="Arma 3 - Signs";
+			author="Bohemia Interactive";
+			url="http://www.arma3.com";
+		};
+		class Item4
+		{
+			className="A3_Structures_F_Ind";
+			name="Arma 3 - Industrial Structures";
+			author="Bohemia Interactive";
+			url="http://www.arma3.com";
+		};
+		class Item5
+		{
+			className="A3_Structures_F_Mil";
+			name="Arma 3 - Military Buildings and Structures";
+			author="Bohemia Interactive";
+			url="http://www.arma3.com";
+		};
+		class Item6
+		{
+			className="A3_Structures_F_EPC";
+			name="Arma 3 Win Episode - Buildings and Structures";
+			author="Bohemia Interactive";
+			url="http://www.arma3.com";
+		};
+		class Item7
+		{
+			className="A3_Structures_F_Wrecks";
+			name="Arma 3 - Vehicle Wrecks";
+			author="Bohemia Interactive";
+			url="http://www.arma3.com";
+		};
+		class Item8
+		{
+			className="A3_Structures_F_EPA";
+			name="Arma 3 Survive Episode - Buildings and Structures";
+			author="Bohemia Interactive";
+			url="http://www.arma3.com";
+		};
+		class Item9
+		{
+			className="A3_Weapons_F";
+			name="Arma 3 Alpha - Weapons and Accessories";
+			author="Bohemia Interactive";
+			url="http://www.arma3.com";
+		};
+		class Item10
+		{
+			className="A3_Structures_F_EPB";
+			name="Arma 3 Adapt Episode - Buildings and Structures";
+			author="Bohemia Interactive";
+			url="http://www.arma3.com";
+		};
+		class Item11
+		{
+			className="A3_Characters_F";
+			name="Arma 3 Alpha - Characters and Clothing";
+			author="Bohemia Interactive";
+			url="http://www.arma3.com";
+		};
+		class Item12
+		{
+			className="A3_Characters_F_Exp";
+			name="Arma 3 Apex - Characters and Clothing";
+			author="Bohemia Interactive";
+			url="http://www.arma3.com";
+		};
+	};
 };
 randomSeed=2639488;
 class ScenarioData
@@ -189,7 +286,7 @@ class Mission
 	};
 	class Entities
 	{
-		items=870;
+		items=914;
 		class Item0
 		{
 			dataType="Marker";
@@ -1760,17 +1857,17 @@ class Mission
 		class Item157
 		{
 			dataType="Marker";
-			position[]={23538.549,13.160051,19945.574};
+			position[]={11242.055,3.6996066e+036,15657.982};
 			name="cop_spawn_5";
 			text="@STR_MAR_Highway_Patrol";
 			type="mil_box";
-			colorName="Color4_FD_F";
 			id=159;
+			atlOffset=3.6996066e+036;
 		};
 		class Item158
 		{
 			dataType="Marker";
-			position[]={23526.816,12.94872,19936.809};
+			position[]={11249.92,51.032684,15663.225};
 			name="cop_car_5";
 			type="Empty";
 			angle=91.179588;
@@ -2668,7 +2765,7 @@ class Mission
 			dataType="Object";
 			class PositionInfo
 			{
-				position[]={14419.248,18.719999,16244.851};
+				position[]={14419.206,18.719999,16244.55};
 				angles[]={0,3.8449256,0};
 			};
 			side="Empty";
@@ -17724,8 +17821,8 @@ class Mission
 			dataType="Object";
 			class PositionInfo
 			{
-				position[]={3266.4573,14.668694,12947.969};
-				angles[]={6.2751846,0,0.0039967569};
+				position[]={3287.084,14.60053,12947.555};
+				angles[]={6.2765174,0,6.2805333};
 			};
 			side="Empty";
 			flags=4;
@@ -17736,7 +17833,7 @@ class Mission
 			};
 			id=588;
 			type="Land_LampAirport_F";
-			atlOffset=0.12005949;
+			atlOffset=2.3841858e-007;
 			class CustomAttributes
 			{
 				class Attribute0
@@ -21067,7 +21164,7 @@ class Mission
 			};
 			id=668;
 			type="Land_WoodenTable_large_F";
-			atlOffset=3.0669041;
+			atlOffset=3.0674;
 			class CustomAttributes
 			{
 				class Attribute0
@@ -21109,7 +21206,7 @@ class Mission
 			};
 			id=669;
 			type="Land_Sink_F";
-			atlOffset=2.9938736;
+			atlOffset=2.9951439;
 			class CustomAttributes
 			{
 				class Attribute0
@@ -21192,7 +21289,7 @@ class Mission
 			};
 			id=671;
 			type="Land_WoodenTable_small_F";
-			atlOffset=3.0877323;
+			atlOffset=3.0877533;
 			class CustomAttributes
 			{
 				class Attribute0
@@ -21685,7 +21782,7 @@ class Mission
 			};
 			id=683;
 			type="Land_Portable_generator_F";
-			atlOffset=3.0999794;
+			atlOffset=3.0999813;
 			class CustomAttributes
 			{
 				class Attribute0
@@ -21726,7 +21823,7 @@ class Mission
 			};
 			id=684;
 			type="Land_MetalBarrel_F";
-			atlOffset=2.9329319;
+			atlOffset=2.9337997;
 			class CustomAttributes
 			{
 				class Attribute0
@@ -21767,7 +21864,7 @@ class Mission
 			};
 			id=685;
 			type="Land_ExtensionCord_F";
-			atlOffset=3.1081409;
+			atlOffset=3.1081429;
 			class CustomAttributes
 			{
 				class Attribute0
@@ -22182,7 +22279,7 @@ class Mission
 			};
 			id=695;
 			type="Land_InfoStand_V1_F";
-			atlOffset=0.038593292;
+			atlOffset=0.039442062;
 			class CustomAttributes
 			{
 				class Attribute0
@@ -22305,7 +22402,7 @@ class Mission
 			};
 			id=698;
 			type="Land_WoodenTable_large_F";
-			atlOffset=3.2618599;
+			atlOffset=3.2618675;
 			class CustomAttributes
 			{
 				class Attribute0
@@ -22347,7 +22444,7 @@ class Mission
 			};
 			id=699;
 			type="Land_Sink_F";
-			atlOffset=3.100647;
+			atlOffset=3.1007195;
 			class CustomAttributes
 			{
 				class Attribute0
@@ -22430,7 +22527,7 @@ class Mission
 			};
 			id=701;
 			type="Land_WoodenTable_small_F";
-			atlOffset=3.1140518;
+			atlOffset=3.1140862;
 			class CustomAttributes
 			{
 				class Attribute0
@@ -22471,7 +22568,7 @@ class Mission
 			};
 			id=702;
 			type="Land_Pallet_vertical_F";
-			atlOffset=0.59643936;
+			atlOffset=0.59646606;
 			class CustomAttributes
 			{
 				class Attribute0
@@ -22635,7 +22732,7 @@ class Mission
 			};
 			id=706;
 			type="Land_Pallet_vertical_F";
-			atlOffset=0.59323311;
+			atlOffset=0.59325027;
 			class CustomAttributes
 			{
 				class Attribute0
@@ -22717,7 +22814,7 @@ class Mission
 			};
 			id=708;
 			type="Land_Pallet_vertical_F";
-			atlOffset=0.59498787;
+			atlOffset=0.59501457;
 			class CustomAttributes
 			{
 				class Attribute0
@@ -22799,7 +22896,7 @@ class Mission
 			};
 			id=710;
 			type="Land_Pallet_vertical_F";
-			atlOffset=0.58853722;
+			atlOffset=0.58858871;
 			class CustomAttributes
 			{
 				class Attribute0
@@ -22923,7 +23020,7 @@ class Mission
 			};
 			id=713;
 			type="Land_Portable_generator_F";
-			atlOffset=3.1153374;
+			atlOffset=3.115366;
 			class CustomAttributes
 			{
 				class Attribute0
@@ -22964,7 +23061,7 @@ class Mission
 			};
 			id=714;
 			type="Land_MetalBarrel_F";
-			atlOffset=3.1282597;
+			atlOffset=3.1282654;
 			class CustomAttributes
 			{
 				class Attribute0
@@ -23005,7 +23102,7 @@ class Mission
 			};
 			id=715;
 			type="Land_ExtensionCord_F";
-			atlOffset=3.1301689;
+			atlOffset=3.1301765;
 			class CustomAttributes
 			{
 				class Attribute0
@@ -23419,7 +23516,7 @@ class Mission
 			};
 			id=725;
 			type="Land_InfoStand_V1_F";
-			atlOffset=0.53439522;
+			atlOffset=0.53438187;
 			class CustomAttributes
 			{
 				class Attribute0
@@ -24298,6 +24395,7 @@ class Mission
 			};
 			id=746;
 			type="Land_CashDesk_F";
+			atlOffset=0.20866203;
 			class CustomAttributes
 			{
 				class Attribute0
@@ -24331,13 +24429,13 @@ class Mission
 				angles[]={0,2.7419298,0};
 			};
 			side="Empty";
-			flags=4;
 			class Attributes
 			{
 				skill=0.60000002;
 			};
 			id=747;
 			type="Land_CashDesk_F";
+			atlOffset=0.56286049;
 			class CustomAttributes
 			{
 				class Attribute0
@@ -24491,13 +24589,13 @@ class Mission
 				angles[]={0,6.0063586,0};
 			};
 			side="Empty";
-			flags=4;
 			class Attributes
 			{
 				skill=0.60000002;
 			};
 			id=751;
 			type="Land_CashDesk_F";
+			atlOffset=0.3939209;
 			class CustomAttributes
 			{
 				class Attribute0
@@ -24538,6 +24636,7 @@ class Mission
 			};
 			id=752;
 			type="Land_CashDesk_F";
+			atlOffset=0.18852997;
 			class CustomAttributes
 			{
 				class Attribute0
@@ -24780,6 +24879,7 @@ class Mission
 			};
 			id=758;
 			type="Land_CashDesk_F";
+			atlOffset=0.19405365;
 			class CustomAttributes
 			{
 				class Attribute0
@@ -29837,8 +29937,8 @@ class Mission
 					dataType="Object";
 					class PositionInfo
 					{
-						position[]={8356.1621,85.693054,24952.854};
-						angles[]={6.1102633,2.7592084,0.093064934};
+						position[]={8357.7598,85.663383,24951.744};
+						angles[]={6.1284323,2.7592084,0.093064293};
 					};
 					side="Civilian";
 					flags=6;
@@ -29876,7 +29976,7 @@ class Mission
 						class Attribute1
 						{
 							property="enableSimulation";
-							expression="if !(is3DEN) then {_this enablesimulation _value;};";
+							expression="if !(is3DEN) then {_this enablesimulationglobal _value;};";
 							class Value
 							{
 								class data
@@ -29895,7 +29995,7 @@ class Mission
 						class Attribute2
 						{
 							property="hideObject";
-							expression="if !(is3DEN) then {_this hideobject _value;};";
+							expression="if !(is3DEN) then {_this hideobjectglobal _value;};";
 							class Value
 							{
 								class data
@@ -29956,7 +30056,7 @@ class Mission
 						class Attribute1
 						{
 							property="enableSimulation";
-							expression="if !(is3DEN) then {_this enablesimulation _value;};";
+							expression="if !(is3DEN) then {_this enablesimulationglobal _value;};";
 							class Value
 							{
 								class data
@@ -30017,7 +30117,7 @@ class Mission
 						class Attribute1
 						{
 							property="enableSimulation";
-							expression="if !(is3DEN) then {_this enablesimulation _value;};";
+							expression="if !(is3DEN) then {_this enablesimulationglobal _value;};";
 							class Value
 							{
 								class data
@@ -30078,7 +30178,7 @@ class Mission
 						class Attribute1
 						{
 							property="enableSimulation";
-							expression="if !(is3DEN) then {_this enablesimulation _value;};";
+							expression="if !(is3DEN) then {_this enablesimulationglobal _value;};";
 							class Value
 							{
 								class data
@@ -30139,7 +30239,7 @@ class Mission
 						class Attribute1
 						{
 							property="enableSimulation";
-							expression="if !(is3DEN) then {_this enablesimulation _value;};";
+							expression="if !(is3DEN) then {_this enablesimulationglobal _value;};";
 							class Value
 							{
 								class data
@@ -30200,7 +30300,7 @@ class Mission
 						class Attribute1
 						{
 							property="enableSimulation";
-							expression="if !(is3DEN) then {_this enablesimulation _value;};";
+							expression="if !(is3DEN) then {_this enablesimulationglobal _value;};";
 							class Value
 							{
 								class data
@@ -30260,7 +30360,7 @@ class Mission
 						class Attribute1
 						{
 							property="enableSimulation";
-							expression="if !(is3DEN) then {_this enablesimulation _value;};";
+							expression="if !(is3DEN) then {_this enablesimulationglobal _value;};";
 							class Value
 							{
 								class data
@@ -30321,7 +30421,7 @@ class Mission
 						class Attribute1
 						{
 							property="enableSimulation";
-							expression="if !(is3DEN) then {_this enablesimulation _value;};";
+							expression="if !(is3DEN) then {_this enablesimulationglobal _value;};";
 							class Value
 							{
 								class data
@@ -30381,7 +30481,7 @@ class Mission
 						class Attribute1
 						{
 							property="enableSimulation";
-							expression="if !(is3DEN) then {_this enablesimulation _value;};";
+							expression="if !(is3DEN) then {_this enablesimulationglobal _value;};";
 							class Value
 							{
 								class data
@@ -30442,7 +30542,7 @@ class Mission
 						class Attribute1
 						{
 							property="enableSimulation";
-							expression="if !(is3DEN) then {_this enablesimulation _value;};";
+							expression="if !(is3DEN) then {_this enablesimulationglobal _value;};";
 							class Value
 							{
 								class data
@@ -30503,7 +30603,7 @@ class Mission
 						class Attribute1
 						{
 							property="enableSimulation";
-							expression="if !(is3DEN) then {_this enablesimulation _value;};";
+							expression="if !(is3DEN) then {_this enablesimulationglobal _value;};";
 							class Value
 							{
 								class data
@@ -30565,7 +30665,7 @@ class Mission
 						class Attribute1
 						{
 							property="enableSimulation";
-							expression="if !(is3DEN) then {_this enablesimulation _value;};";
+							expression="if !(is3DEN) then {_this enablesimulationglobal _value;};";
 							class Value
 							{
 								class data
@@ -30625,7 +30725,7 @@ class Mission
 						class Attribute1
 						{
 							property="enableSimulation";
-							expression="if !(is3DEN) then {_this enablesimulation _value;};";
+							expression="if !(is3DEN) then {_this enablesimulationglobal _value;};";
 							class Value
 							{
 								class data
@@ -30686,7 +30786,7 @@ class Mission
 						class Attribute1
 						{
 							property="enableSimulation";
-							expression="if !(is3DEN) then {_this enablesimulation _value;};";
+							expression="if !(is3DEN) then {_this enablesimulationglobal _value;};";
 							class Value
 							{
 								class data
@@ -30747,7 +30847,7 @@ class Mission
 						class Attribute1
 						{
 							property="enableSimulation";
-							expression="if !(is3DEN) then {_this enablesimulation _value;};";
+							expression="if !(is3DEN) then {_this enablesimulationglobal _value;};";
 							class Value
 							{
 								class data
@@ -30808,7 +30908,7 @@ class Mission
 						class Attribute1
 						{
 							property="enableSimulation";
-							expression="if !(is3DEN) then {_this enablesimulation _value;};";
+							expression="if !(is3DEN) then {_this enablesimulationglobal _value;};";
 							class Value
 							{
 								class data
@@ -30869,7 +30969,7 @@ class Mission
 						class Attribute1
 						{
 							property="enableSimulation";
-							expression="if !(is3DEN) then {_this enablesimulation _value;};";
+							expression="if !(is3DEN) then {_this enablesimulationglobal _value;};";
 							class Value
 							{
 								class data
@@ -30930,7 +31030,7 @@ class Mission
 						class Attribute1
 						{
 							property="enableSimulation";
-							expression="if !(is3DEN) then {_this enablesimulation _value;};";
+							expression="if !(is3DEN) then {_this enablesimulationglobal _value;};";
 							class Value
 							{
 								class data
@@ -30990,7 +31090,7 @@ class Mission
 						class Attribute1
 						{
 							property="enableSimulation";
-							expression="if !(is3DEN) then {_this enablesimulation _value;};";
+							expression="if !(is3DEN) then {_this enablesimulationglobal _value;};";
 							class Value
 							{
 								class data
@@ -31051,7 +31151,7 @@ class Mission
 						class Attribute1
 						{
 							property="enableSimulation";
-							expression="if !(is3DEN) then {_this enablesimulation _value;};";
+							expression="if !(is3DEN) then {_this enablesimulationglobal _value;};";
 							class Value
 							{
 								class data
@@ -31111,7 +31211,7 @@ class Mission
 						class Attribute1
 						{
 							property="enableSimulation";
-							expression="if !(is3DEN) then {_this enablesimulation _value;};";
+							expression="if !(is3DEN) then {_this enablesimulationglobal _value;};";
 							class Value
 							{
 								class data
@@ -31171,7 +31271,7 @@ class Mission
 						class Attribute1
 						{
 							property="enableSimulation";
-							expression="if !(is3DEN) then {_this enablesimulation _value;};";
+							expression="if !(is3DEN) then {_this enablesimulationglobal _value;};";
 							class Value
 							{
 								class data
@@ -31232,7 +31332,7 @@ class Mission
 						class Attribute1
 						{
 							property="enableSimulation";
-							expression="if !(is3DEN) then {_this enablesimulation _value;};";
+							expression="if !(is3DEN) then {_this enablesimulationglobal _value;};";
 							class Value
 							{
 								class data
@@ -31293,7 +31393,7 @@ class Mission
 						class Attribute1
 						{
 							property="enableSimulation";
-							expression="if !(is3DEN) then {_this enablesimulation _value;};";
+							expression="if !(is3DEN) then {_this enablesimulationglobal _value;};";
 							class Value
 							{
 								class data
@@ -31354,7 +31454,7 @@ class Mission
 						class Attribute1
 						{
 							property="enableSimulation";
-							expression="if !(is3DEN) then {_this enablesimulation _value;};";
+							expression="if !(is3DEN) then {_this enablesimulationglobal _value;};";
 							class Value
 							{
 								class data
@@ -31415,7 +31515,7 @@ class Mission
 						class Attribute1
 						{
 							property="enableSimulation";
-							expression="if !(is3DEN) then {_this enablesimulation _value;};";
+							expression="if !(is3DEN) then {_this enablesimulationglobal _value;};";
 							class Value
 							{
 								class data
@@ -31476,7 +31576,7 @@ class Mission
 						class Attribute1
 						{
 							property="enableSimulation";
-							expression="if !(is3DEN) then {_this enablesimulation _value;};";
+							expression="if !(is3DEN) then {_this enablesimulationglobal _value;};";
 							class Value
 							{
 								class data
@@ -31537,7 +31637,7 @@ class Mission
 						class Attribute1
 						{
 							property="enableSimulation";
-							expression="if !(is3DEN) then {_this enablesimulation _value;};";
+							expression="if !(is3DEN) then {_this enablesimulationglobal _value;};";
 							class Value
 							{
 								class data
@@ -31597,7 +31697,7 @@ class Mission
 						class Attribute1
 						{
 							property="enableSimulation";
-							expression="if !(is3DEN) then {_this enablesimulation _value;};";
+							expression="if !(is3DEN) then {_this enablesimulationglobal _value;};";
 							class Value
 							{
 								class data
@@ -31657,7 +31757,7 @@ class Mission
 						class Attribute1
 						{
 							property="enableSimulation";
-							expression="if !(is3DEN) then {_this enablesimulation _value;};";
+							expression="if !(is3DEN) then {_this enablesimulationglobal _value;};";
 							class Value
 							{
 								class data
@@ -31718,7 +31818,7 @@ class Mission
 						class Attribute1
 						{
 							property="enableSimulation";
-							expression="if !(is3DEN) then {_this enablesimulation _value;};";
+							expression="if !(is3DEN) then {_this enablesimulationglobal _value;};";
 							class Value
 							{
 								class data
@@ -31779,7 +31879,7 @@ class Mission
 						class Attribute1
 						{
 							property="enableSimulation";
-							expression="if !(is3DEN) then {_this enablesimulation _value;};";
+							expression="if !(is3DEN) then {_this enablesimulationglobal _value;};";
 							class Value
 							{
 								class data
@@ -31840,7 +31940,7 @@ class Mission
 						class Attribute1
 						{
 							property="enableSimulation";
-							expression="if !(is3DEN) then {_this enablesimulation _value;};";
+							expression="if !(is3DEN) then {_this enablesimulationglobal _value;};";
 							class Value
 							{
 								class data
@@ -31900,7 +32000,7 @@ class Mission
 						class Attribute1
 						{
 							property="enableSimulation";
-							expression="if !(is3DEN) then {_this enablesimulation _value;};";
+							expression="if !(is3DEN) then {_this enablesimulationglobal _value;};";
 							class Value
 							{
 								class data
@@ -31961,7 +32061,7 @@ class Mission
 						class Attribute1
 						{
 							property="enableSimulation";
-							expression="if !(is3DEN) then {_this enablesimulation _value;};";
+							expression="if !(is3DEN) then {_this enablesimulationglobal _value;};";
 							class Value
 							{
 								class data
@@ -32021,7 +32121,7 @@ class Mission
 						class Attribute1
 						{
 							property="enableSimulation";
-							expression="if !(is3DEN) then {_this enablesimulation _value;};";
+							expression="if !(is3DEN) then {_this enablesimulationglobal _value;};";
 							class Value
 							{
 								class data
@@ -32081,7 +32181,7 @@ class Mission
 						class Attribute1
 						{
 							property="enableSimulation";
-							expression="if !(is3DEN) then {_this enablesimulation _value;};";
+							expression="if !(is3DEN) then {_this enablesimulationglobal _value;};";
 							class Value
 							{
 								class data
@@ -32142,7 +32242,7 @@ class Mission
 						class Attribute1
 						{
 							property="enableSimulation";
-							expression="if !(is3DEN) then {_this enablesimulation _value;};";
+							expression="if !(is3DEN) then {_this enablesimulationglobal _value;};";
 							class Value
 							{
 								class data
@@ -32203,7 +32303,7 @@ class Mission
 						class Attribute1
 						{
 							property="enableSimulation";
-							expression="if !(is3DEN) then {_this enablesimulation _value;};";
+							expression="if !(is3DEN) then {_this enablesimulationglobal _value;};";
 							class Value
 							{
 								class data
@@ -32263,7 +32363,7 @@ class Mission
 						class Attribute1
 						{
 							property="enableSimulation";
-							expression="if !(is3DEN) then {_this enablesimulation _value;};";
+							expression="if !(is3DEN) then {_this enablesimulationglobal _value;};";
 							class Value
 							{
 								class data
@@ -32324,7 +32424,7 @@ class Mission
 						class Attribute1
 						{
 							property="enableSimulation";
-							expression="if !(is3DEN) then {_this enablesimulation _value;};";
+							expression="if !(is3DEN) then {_this enablesimulationglobal _value;};";
 							class Value
 							{
 								class data
@@ -32384,7 +32484,7 @@ class Mission
 						class Attribute1
 						{
 							property="enableSimulation";
-							expression="if !(is3DEN) then {_this enablesimulation _value;};";
+							expression="if !(is3DEN) then {_this enablesimulationglobal _value;};";
 							class Value
 							{
 								class data
@@ -32444,7 +32544,7 @@ class Mission
 						class Attribute1
 						{
 							property="enableSimulation";
-							expression="if !(is3DEN) then {_this enablesimulation _value;};";
+							expression="if !(is3DEN) then {_this enablesimulationglobal _value;};";
 							class Value
 							{
 								class data
@@ -32505,7 +32605,7 @@ class Mission
 						class Attribute1
 						{
 							property="enableSimulation";
-							expression="if !(is3DEN) then {_this enablesimulation _value;};";
+							expression="if !(is3DEN) then {_this enablesimulationglobal _value;};";
 							class Value
 							{
 								class data
@@ -32567,7 +32667,7 @@ class Mission
 						class Attribute1
 						{
 							property="enableSimulation";
-							expression="if !(is3DEN) then {_this enablesimulation _value;};";
+							expression="if !(is3DEN) then {_this enablesimulationglobal _value;};";
 							class Value
 							{
 								class data
@@ -32628,7 +32728,7 @@ class Mission
 						class Attribute1
 						{
 							property="enableSimulation";
-							expression="if !(is3DEN) then {_this enablesimulation _value;};";
+							expression="if !(is3DEN) then {_this enablesimulationglobal _value;};";
 							class Value
 							{
 								class data
@@ -32688,7 +32788,7 @@ class Mission
 						class Attribute1
 						{
 							property="enableSimulation";
-							expression="if !(is3DEN) then {_this enablesimulation _value;};";
+							expression="if !(is3DEN) then {_this enablesimulationglobal _value;};";
 							class Value
 							{
 								class data
@@ -32748,7 +32848,7 @@ class Mission
 						class Attribute1
 						{
 							property="enableSimulation";
-							expression="if !(is3DEN) then {_this enablesimulation _value;};";
+							expression="if !(is3DEN) then {_this enablesimulationglobal _value;};";
 							class Value
 							{
 								class data
@@ -32808,7 +32908,7 @@ class Mission
 						class Attribute1
 						{
 							property="enableSimulation";
-							expression="if !(is3DEN) then {_this enablesimulation _value;};";
+							expression="if !(is3DEN) then {_this enablesimulationglobal _value;};";
 							class Value
 							{
 								class data
@@ -32868,7 +32968,7 @@ class Mission
 						class Attribute1
 						{
 							property="enableSimulation";
-							expression="if !(is3DEN) then {_this enablesimulation _value;};";
+							expression="if !(is3DEN) then {_this enablesimulationglobal _value;};";
 							class Value
 							{
 								class data
@@ -32929,7 +33029,7 @@ class Mission
 						class Attribute1
 						{
 							property="enableSimulation";
-							expression="if !(is3DEN) then {_this enablesimulation _value;};";
+							expression="if !(is3DEN) then {_this enablesimulationglobal _value;};";
 							class Value
 							{
 								class data
@@ -32989,7 +33089,7 @@ class Mission
 						class Attribute1
 						{
 							property="enableSimulation";
-							expression="if !(is3DEN) then {_this enablesimulation _value;};";
+							expression="if !(is3DEN) then {_this enablesimulationglobal _value;};";
 							class Value
 							{
 								class data
@@ -33050,7 +33150,7 @@ class Mission
 						class Attribute1
 						{
 							property="enableSimulation";
-							expression="if !(is3DEN) then {_this enablesimulation _value;};";
+							expression="if !(is3DEN) then {_this enablesimulationglobal _value;};";
 							class Value
 							{
 								class data
@@ -33111,7 +33211,7 @@ class Mission
 						class Attribute1
 						{
 							property="enableSimulation";
-							expression="if !(is3DEN) then {_this enablesimulation _value;};";
+							expression="if !(is3DEN) then {_this enablesimulationglobal _value;};";
 							class Value
 							{
 								class data
@@ -33171,7 +33271,7 @@ class Mission
 						class Attribute1
 						{
 							property="enableSimulation";
-							expression="if !(is3DEN) then {_this enablesimulation _value;};";
+							expression="if !(is3DEN) then {_this enablesimulationglobal _value;};";
 							class Value
 							{
 								class data
@@ -33231,7 +33331,7 @@ class Mission
 						class Attribute1
 						{
 							property="enableSimulation";
-							expression="if !(is3DEN) then {_this enablesimulation _value;};";
+							expression="if !(is3DEN) then {_this enablesimulationglobal _value;};";
 							class Value
 							{
 								class data
@@ -33291,7 +33391,7 @@ class Mission
 						class Attribute1
 						{
 							property="enableSimulation";
-							expression="if !(is3DEN) then {_this enablesimulation _value;};";
+							expression="if !(is3DEN) then {_this enablesimulationglobal _value;};";
 							class Value
 							{
 								class data
@@ -33352,7 +33452,7 @@ class Mission
 						class Attribute1
 						{
 							property="enableSimulation";
-							expression="if !(is3DEN) then {_this enablesimulation _value;};";
+							expression="if !(is3DEN) then {_this enablesimulationglobal _value;};";
 							class Value
 							{
 								class data
@@ -33413,7 +33513,7 @@ class Mission
 						class Attribute1
 						{
 							property="enableSimulation";
-							expression="if !(is3DEN) then {_this enablesimulation _value;};";
+							expression="if !(is3DEN) then {_this enablesimulationglobal _value;};";
 							class Value
 							{
 								class data
@@ -33474,7 +33574,7 @@ class Mission
 						class Attribute1
 						{
 							property="enableSimulation";
-							expression="if !(is3DEN) then {_this enablesimulation _value;};";
+							expression="if !(is3DEN) then {_this enablesimulationglobal _value;};";
 							class Value
 							{
 								class data
@@ -33534,7 +33634,7 @@ class Mission
 						class Attribute1
 						{
 							property="enableSimulation";
-							expression="if !(is3DEN) then {_this enablesimulation _value;};";
+							expression="if !(is3DEN) then {_this enablesimulationglobal _value;};";
 							class Value
 							{
 								class data
@@ -33595,7 +33695,7 @@ class Mission
 						class Attribute1
 						{
 							property="enableSimulation";
-							expression="if !(is3DEN) then {_this enablesimulation _value;};";
+							expression="if !(is3DEN) then {_this enablesimulationglobal _value;};";
 							class Value
 							{
 								class data
@@ -33656,7 +33756,7 @@ class Mission
 						class Attribute1
 						{
 							property="enableSimulation";
-							expression="if !(is3DEN) then {_this enablesimulation _value;};";
+							expression="if !(is3DEN) then {_this enablesimulationglobal _value;};";
 							class Value
 							{
 								class data
@@ -33716,7 +33816,7 @@ class Mission
 						class Attribute1
 						{
 							property="enableSimulation";
-							expression="if !(is3DEN) then {_this enablesimulation _value;};";
+							expression="if !(is3DEN) then {_this enablesimulationglobal _value;};";
 							class Value
 							{
 								class data
@@ -33776,7 +33876,7 @@ class Mission
 						class Attribute1
 						{
 							property="enableSimulation";
-							expression="if !(is3DEN) then {_this enablesimulation _value;};";
+							expression="if !(is3DEN) then {_this enablesimulationglobal _value;};";
 							class Value
 							{
 								class data
@@ -33836,7 +33936,7 @@ class Mission
 						class Attribute1
 						{
 							property="enableSimulation";
-							expression="if !(is3DEN) then {_this enablesimulation _value;};";
+							expression="if !(is3DEN) then {_this enablesimulationglobal _value;};";
 							class Value
 							{
 								class data
@@ -33896,7 +33996,7 @@ class Mission
 						class Attribute1
 						{
 							property="enableSimulation";
-							expression="if !(is3DEN) then {_this enablesimulation _value;};";
+							expression="if !(is3DEN) then {_this enablesimulationglobal _value;};";
 							class Value
 							{
 								class data
@@ -33956,7 +34056,7 @@ class Mission
 						class Attribute1
 						{
 							property="enableSimulation";
-							expression="if !(is3DEN) then {_this enablesimulation _value;};";
+							expression="if !(is3DEN) then {_this enablesimulationglobal _value;};";
 							class Value
 							{
 								class data
@@ -34016,7 +34116,7 @@ class Mission
 						class Attribute1
 						{
 							property="enableSimulation";
-							expression="if !(is3DEN) then {_this enablesimulation _value;};";
+							expression="if !(is3DEN) then {_this enablesimulationglobal _value;};";
 							class Value
 							{
 								class data
@@ -34076,7 +34176,7 @@ class Mission
 						class Attribute1
 						{
 							property="enableSimulation";
-							expression="if !(is3DEN) then {_this enablesimulation _value;};";
+							expression="if !(is3DEN) then {_this enablesimulationglobal _value;};";
 							class Value
 							{
 								class data
@@ -34136,7 +34236,7 @@ class Mission
 						class Attribute1
 						{
 							property="enableSimulation";
-							expression="if !(is3DEN) then {_this enablesimulation _value;};";
+							expression="if !(is3DEN) then {_this enablesimulationglobal _value;};";
 							class Value
 							{
 								class data
@@ -34196,7 +34296,7 @@ class Mission
 						class Attribute1
 						{
 							property="enableSimulation";
-							expression="if !(is3DEN) then {_this enablesimulation _value;};";
+							expression="if !(is3DEN) then {_this enablesimulationglobal _value;};";
 							class Value
 							{
 								class data
@@ -34257,7 +34357,7 @@ class Mission
 						class Attribute1
 						{
 							property="enableSimulation";
-							expression="if !(is3DEN) then {_this enablesimulation _value;};";
+							expression="if !(is3DEN) then {_this enablesimulationglobal _value;};";
 							class Value
 							{
 								class data
@@ -34318,7 +34418,7 @@ class Mission
 						class Attribute1
 						{
 							property="enableSimulation";
-							expression="if !(is3DEN) then {_this enablesimulation _value;};";
+							expression="if !(is3DEN) then {_this enablesimulationglobal _value;};";
 							class Value
 							{
 								class data
@@ -34378,7 +34478,7 @@ class Mission
 						class Attribute1
 						{
 							property="enableSimulation";
-							expression="if !(is3DEN) then {_this enablesimulation _value;};";
+							expression="if !(is3DEN) then {_this enablesimulationglobal _value;};";
 							class Value
 							{
 								class data
@@ -34438,7 +34538,7 @@ class Mission
 						class Attribute1
 						{
 							property="enableSimulation";
-							expression="if !(is3DEN) then {_this enablesimulation _value;};";
+							expression="if !(is3DEN) then {_this enablesimulationglobal _value;};";
 							class Value
 							{
 								class data
@@ -34498,7 +34598,7 @@ class Mission
 						class Attribute1
 						{
 							property="enableSimulation";
-							expression="if !(is3DEN) then {_this enablesimulation _value;};";
+							expression="if !(is3DEN) then {_this enablesimulationglobal _value;};";
 							class Value
 							{
 								class data
@@ -34560,7 +34660,7 @@ class Mission
 						class Attribute1
 						{
 							property="enableSimulation";
-							expression="if !(is3DEN) then {_this enablesimulation _value;};";
+							expression="if !(is3DEN) then {_this enablesimulationglobal _value;};";
 							class Value
 							{
 								class data
@@ -34621,7 +34721,7 @@ class Mission
 						class Attribute1
 						{
 							property="enableSimulation";
-							expression="if !(is3DEN) then {_this enablesimulation _value;};";
+							expression="if !(is3DEN) then {_this enablesimulationglobal _value;};";
 							class Value
 							{
 								class data
@@ -34682,7 +34782,7 @@ class Mission
 						class Attribute1
 						{
 							property="enableSimulation";
-							expression="if !(is3DEN) then {_this enablesimulation _value;};";
+							expression="if !(is3DEN) then {_this enablesimulationglobal _value;};";
 							class Value
 							{
 								class data
@@ -34742,7 +34842,7 @@ class Mission
 						class Attribute1
 						{
 							property="enableSimulation";
-							expression="if !(is3DEN) then {_this enablesimulation _value;};";
+							expression="if !(is3DEN) then {_this enablesimulationglobal _value;};";
 							class Value
 							{
 								class data
@@ -34802,7 +34902,7 @@ class Mission
 						class Attribute1
 						{
 							property="enableSimulation";
-							expression="if !(is3DEN) then {_this enablesimulation _value;};";
+							expression="if !(is3DEN) then {_this enablesimulationglobal _value;};";
 							class Value
 							{
 								class data
@@ -34862,7 +34962,7 @@ class Mission
 						class Attribute1
 						{
 							property="enableSimulation";
-							expression="if !(is3DEN) then {_this enablesimulation _value;};";
+							expression="if !(is3DEN) then {_this enablesimulationglobal _value;};";
 							class Value
 							{
 								class data
@@ -34922,7 +35022,7 @@ class Mission
 						class Attribute1
 						{
 							property="enableSimulation";
-							expression="if !(is3DEN) then {_this enablesimulation _value;};";
+							expression="if !(is3DEN) then {_this enablesimulationglobal _value;};";
 							class Value
 							{
 								class data
@@ -34982,7 +35082,7 @@ class Mission
 						class Attribute1
 						{
 							property="enableSimulation";
-							expression="if !(is3DEN) then {_this enablesimulation _value;};";
+							expression="if !(is3DEN) then {_this enablesimulationglobal _value;};";
 							class Value
 							{
 								class data
@@ -35006,8 +35106,8 @@ class Mission
 					dataType="Object";
 					class PositionInfo
 					{
-						position[]={23539.895,13.287899,19956.844};
-						angles[]={6.2738566,3.1774943,0.0026520467};
+						position[]={11235.285,51.210876,15683.352};
+						angles[]={0,2.1730838,0};
 					};
 					side="Civilian";
 					flags=4;
@@ -35043,7 +35143,7 @@ class Mission
 						class Attribute1
 						{
 							property="enableSimulation";
-							expression="if !(is3DEN) then {_this enablesimulation _value;};";
+							expression="if !(is3DEN) then {_this enablesimulationglobal _value;};";
 							class Value
 							{
 								class data
@@ -35067,8 +35167,8 @@ class Mission
 					dataType="Object";
 					class PositionInfo
 					{
-						position[]={23521.73,12.89639,19942.031};
-						angles[]={6.2778587,2.4421871,0.015998369};
+						position[]={11249.461,51.010719,15668.088};
+						angles[]={0,2.8555071,0.0012918708};
 					};
 					side="Civilian";
 					flags=4;
@@ -35103,7 +35203,7 @@ class Mission
 						class Attribute1
 						{
 							property="enableSimulation";
-							expression="if !(is3DEN) then {_this enablesimulation _value;};";
+							expression="if !(is3DEN) then {_this enablesimulationglobal _value;};";
 							class Value
 							{
 								class data
@@ -35163,7 +35263,7 @@ class Mission
 						class Attribute1
 						{
 							property="enableSimulation";
-							expression="if !(is3DEN) then {_this enablesimulation _value;};";
+							expression="if !(is3DEN) then {_this enablesimulationglobal _value;};";
 							class Value
 							{
 								class data
@@ -35223,7 +35323,7 @@ class Mission
 						class Attribute1
 						{
 							property="enableSimulation";
-							expression="if !(is3DEN) then {_this enablesimulation _value;};";
+							expression="if !(is3DEN) then {_this enablesimulationglobal _value;};";
 							class Value
 							{
 								class data
@@ -35283,7 +35383,7 @@ class Mission
 						class Attribute1
 						{
 							property="enableSimulation";
-							expression="if !(is3DEN) then {_this enablesimulation _value;};";
+							expression="if !(is3DEN) then {_this enablesimulationglobal _value;};";
 							class Value
 							{
 								class data
@@ -35343,7 +35443,7 @@ class Mission
 						class Attribute1
 						{
 							property="enableSimulation";
-							expression="if !(is3DEN) then {_this enablesimulation _value;};";
+							expression="if !(is3DEN) then {_this enablesimulationglobal _value;};";
 							class Value
 							{
 								class data
@@ -35403,7 +35503,7 @@ class Mission
 						class Attribute1
 						{
 							property="enableSimulation";
-							expression="if !(is3DEN) then {_this enablesimulation _value;};";
+							expression="if !(is3DEN) then {_this enablesimulationglobal _value;};";
 							class Value
 							{
 								class data
@@ -35463,7 +35563,7 @@ class Mission
 						class Attribute1
 						{
 							property="enableSimulation";
-							expression="if !(is3DEN) then {_this enablesimulation _value;};";
+							expression="if !(is3DEN) then {_this enablesimulationglobal _value;};";
 							class Value
 							{
 								class data
@@ -35523,7 +35623,7 @@ class Mission
 						class Attribute1
 						{
 							property="enableSimulation";
-							expression="if !(is3DEN) then {_this enablesimulation _value;};";
+							expression="if !(is3DEN) then {_this enablesimulationglobal _value;};";
 							class Value
 							{
 								class data
@@ -35583,7 +35683,7 @@ class Mission
 						class Attribute1
 						{
 							property="enableSimulation";
-							expression="if !(is3DEN) then {_this enablesimulation _value;};";
+							expression="if !(is3DEN) then {_this enablesimulationglobal _value;};";
 							class Value
 							{
 								class data
@@ -35643,7 +35743,7 @@ class Mission
 						class Attribute1
 						{
 							property="enableSimulation";
-							expression="if !(is3DEN) then {_this enablesimulation _value;};";
+							expression="if !(is3DEN) then {_this enablesimulationglobal _value;};";
 							class Value
 							{
 								class data
@@ -35703,7 +35803,7 @@ class Mission
 						class Attribute1
 						{
 							property="enableSimulation";
-							expression="if !(is3DEN) then {_this enablesimulation _value;};";
+							expression="if !(is3DEN) then {_this enablesimulationglobal _value;};";
 							class Value
 							{
 								class data
@@ -35763,7 +35863,7 @@ class Mission
 						class Attribute1
 						{
 							property="enableSimulation";
-							expression="if !(is3DEN) then {_this enablesimulation _value;};";
+							expression="if !(is3DEN) then {_this enablesimulationglobal _value;};";
 							class Value
 							{
 								class data
@@ -35823,7 +35923,7 @@ class Mission
 						class Attribute1
 						{
 							property="enableSimulation";
-							expression="if !(is3DEN) then {_this enablesimulation _value;};";
+							expression="if !(is3DEN) then {_this enablesimulationglobal _value;};";
 							class Value
 							{
 								class data
@@ -35884,7 +35984,7 @@ class Mission
 						class Attribute1
 						{
 							property="enableSimulation";
-							expression="if !(is3DEN) then {_this enablesimulation _value;};";
+							expression="if !(is3DEN) then {_this enablesimulationglobal _value;};";
 							class Value
 							{
 								class data
@@ -35945,7 +36045,7 @@ class Mission
 						class Attribute1
 						{
 							property="enableSimulation";
-							expression="if !(is3DEN) then {_this enablesimulation _value;};";
+							expression="if !(is3DEN) then {_this enablesimulationglobal _value;};";
 							class Value
 							{
 								class data
@@ -36006,7 +36106,7 @@ class Mission
 						class Attribute1
 						{
 							property="enableSimulation";
-							expression="if !(is3DEN) then {_this enablesimulation _value;};";
+							expression="if !(is3DEN) then {_this enablesimulationglobal _value;};";
 							class Value
 							{
 								class data
@@ -36067,7 +36167,7 @@ class Mission
 						class Attribute1
 						{
 							property="enableSimulation";
-							expression="if !(is3DEN) then {_this enablesimulation _value;};";
+							expression="if !(is3DEN) then {_this enablesimulationglobal _value;};";
 							class Value
 							{
 								class data
@@ -36129,7 +36229,7 @@ class Mission
 						class Attribute1
 						{
 							property="enableSimulation";
-							expression="if !(is3DEN) then {_this enablesimulation _value;};";
+							expression="if !(is3DEN) then {_this enablesimulationglobal _value;};";
 							class Value
 							{
 								class data
@@ -36189,7 +36289,7 @@ class Mission
 						class Attribute1
 						{
 							property="enableSimulation";
-							expression="if !(is3DEN) then {_this enablesimulation _value;};";
+							expression="if !(is3DEN) then {_this enablesimulationglobal _value;};";
 							class Value
 							{
 								class data
@@ -36249,7 +36349,7 @@ class Mission
 						class Attribute1
 						{
 							property="enableSimulation";
-							expression="if !(is3DEN) then {_this enablesimulation _value;};";
+							expression="if !(is3DEN) then {_this enablesimulationglobal _value;};";
 							class Value
 							{
 								class data
@@ -36309,7 +36409,7 @@ class Mission
 						class Attribute1
 						{
 							property="enableSimulation";
-							expression="if !(is3DEN) then {_this enablesimulation _value;};";
+							expression="if !(is3DEN) then {_this enablesimulationglobal _value;};";
 							class Value
 							{
 								class data
@@ -36369,7 +36469,7 @@ class Mission
 						class Attribute1
 						{
 							property="enableSimulation";
-							expression="if !(is3DEN) then {_this enablesimulation _value;};";
+							expression="if !(is3DEN) then {_this enablesimulationglobal _value;};";
 							class Value
 							{
 								class data
@@ -36429,7 +36529,7 @@ class Mission
 						class Attribute1
 						{
 							property="enableSimulation";
-							expression="if !(is3DEN) then {_this enablesimulation _value;};";
+							expression="if !(is3DEN) then {_this enablesimulationglobal _value;};";
 							class Value
 							{
 								class data
@@ -36489,7 +36589,7 @@ class Mission
 						class Attribute1
 						{
 							property="enableSimulation";
-							expression="if !(is3DEN) then {_this enablesimulation _value;};";
+							expression="if !(is3DEN) then {_this enablesimulationglobal _value;};";
 							class Value
 							{
 								class data
@@ -36549,7 +36649,7 @@ class Mission
 						class Attribute1
 						{
 							property="enableSimulation";
-							expression="if !(is3DEN) then {_this enablesimulation _value;};";
+							expression="if !(is3DEN) then {_this enablesimulationglobal _value;};";
 							class Value
 							{
 								class data
@@ -36610,7 +36710,7 @@ class Mission
 						class Attribute1
 						{
 							property="enableSimulation";
-							expression="if !(is3DEN) then {_this enablesimulation _value;};";
+							expression="if !(is3DEN) then {_this enablesimulationglobal _value;};";
 							class Value
 							{
 								class data
@@ -36670,7 +36770,7 @@ class Mission
 						class Attribute1
 						{
 							property="enableSimulation";
-							expression="if !(is3DEN) then {_this enablesimulation _value;};";
+							expression="if !(is3DEN) then {_this enablesimulationglobal _value;};";
 							class Value
 							{
 								class data
@@ -36730,7 +36830,7 @@ class Mission
 						class Attribute1
 						{
 							property="enableSimulation";
-							expression="if !(is3DEN) then {_this enablesimulation _value;};";
+							expression="if !(is3DEN) then {_this enablesimulationglobal _value;};";
 							class Value
 							{
 								class data
@@ -36766,6 +36866,7 @@ class Mission
 					};
 					id=1065;
 					type="C_Nikos_aged";
+					atlOffset=0.22426224;
 					class CustomAttributes
 					{
 						class Attribute0
@@ -36790,7 +36891,7 @@ class Mission
 						class Attribute1
 						{
 							property="enableSimulation";
-							expression="if !(is3DEN) then {_this enablesimulation _value;};";
+							expression="if !(is3DEN) then {_this enablesimulationglobal _value;};";
 							class Value
 							{
 								class data
@@ -36818,7 +36919,6 @@ class Mission
 						angles[]={0,6.1261058,0};
 					};
 					side="Civilian";
-					flags=4;
 					class Attributes
 					{
 						init="this enableSimulation false; this allowDamage false; this addAction[localize""STR_MAR_Station_Shop"",life_fnc_weaponShopMenu,""f_station_store""];this addAction[localize""STR_Shop_Station_Coffee"",life_fnc_virt_menu,""f_station_coffee""];";
@@ -36826,6 +36926,7 @@ class Mission
 					};
 					id=1067;
 					type="C_Nikos_aged";
+					atlOffset=0.57194901;
 					class CustomAttributes
 					{
 						class Attribute0
@@ -36850,7 +36951,7 @@ class Mission
 						class Attribute1
 						{
 							property="enableSimulation";
-							expression="if !(is3DEN) then {_this enablesimulation _value;};";
+							expression="if !(is3DEN) then {_this enablesimulationglobal _value;};";
 							class Value
 							{
 								class data
@@ -36910,7 +37011,7 @@ class Mission
 						class Attribute1
 						{
 							property="enableSimulation";
-							expression="if !(is3DEN) then {_this enablesimulation _value;};";
+							expression="if !(is3DEN) then {_this enablesimulationglobal _value;};";
 							class Value
 							{
 								class data
@@ -36970,7 +37071,7 @@ class Mission
 						class Attribute1
 						{
 							property="enableSimulation";
-							expression="if !(is3DEN) then {_this enablesimulation _value;};";
+							expression="if !(is3DEN) then {_this enablesimulationglobal _value;};";
 							class Value
 							{
 								class data
@@ -37030,7 +37131,7 @@ class Mission
 						class Attribute1
 						{
 							property="enableSimulation";
-							expression="if !(is3DEN) then {_this enablesimulation _value;};";
+							expression="if !(is3DEN) then {_this enablesimulationglobal _value;};";
 							class Value
 							{
 								class data
@@ -37058,7 +37159,6 @@ class Mission
 						angles[]={0,2.8397205,0};
 					};
 					side="Civilian";
-					flags=4;
 					class Attributes
 					{
 						init="this enableSimulation false; this allowDamage false; this addAction[localize""STR_MAR_Station_Shop"",life_fnc_weaponShopMenu,""f_station_store""];this addAction[localize""STR_Shop_Station_Coffee"",life_fnc_virt_menu,""f_station_coffee""];";
@@ -37066,6 +37166,7 @@ class Mission
 					};
 					id=1075;
 					type="C_Nikos_aged";
+					atlOffset=0.42167664;
 					class CustomAttributes
 					{
 						class Attribute0
@@ -37090,7 +37191,7 @@ class Mission
 						class Attribute1
 						{
 							property="enableSimulation";
-							expression="if !(is3DEN) then {_this enablesimulation _value;};";
+							expression="if !(is3DEN) then {_this enablesimulationglobal _value;};";
 							class Value
 							{
 								class data
@@ -37126,6 +37227,7 @@ class Mission
 					};
 					id=1077;
 					type="C_Nikos_aged";
+					atlOffset=0.19090271;
 					class CustomAttributes
 					{
 						class Attribute0
@@ -37150,7 +37252,7 @@ class Mission
 						class Attribute1
 						{
 							property="enableSimulation";
-							expression="if !(is3DEN) then {_this enablesimulation _value;};";
+							expression="if !(is3DEN) then {_this enablesimulationglobal _value;};";
 							class Value
 							{
 								class data
@@ -37210,7 +37312,7 @@ class Mission
 						class Attribute1
 						{
 							property="enableSimulation";
-							expression="if !(is3DEN) then {_this enablesimulation _value;};";
+							expression="if !(is3DEN) then {_this enablesimulationglobal _value;};";
 							class Value
 							{
 								class data
@@ -37270,7 +37372,7 @@ class Mission
 						class Attribute1
 						{
 							property="enableSimulation";
-							expression="if !(is3DEN) then {_this enablesimulation _value;};";
+							expression="if !(is3DEN) then {_this enablesimulationglobal _value;};";
 							class Value
 							{
 								class data
@@ -37330,7 +37432,7 @@ class Mission
 						class Attribute1
 						{
 							property="enableSimulation";
-							expression="if !(is3DEN) then {_this enablesimulation _value;};";
+							expression="if !(is3DEN) then {_this enablesimulationglobal _value;};";
 							class Value
 							{
 								class data
@@ -37390,7 +37492,7 @@ class Mission
 						class Attribute1
 						{
 							property="enableSimulation";
-							expression="if !(is3DEN) then {_this enablesimulation _value;};";
+							expression="if !(is3DEN) then {_this enablesimulationglobal _value;};";
 							class Value
 							{
 								class data
@@ -37450,7 +37552,7 @@ class Mission
 						class Attribute1
 						{
 							property="enableSimulation";
-							expression="if !(is3DEN) then {_this enablesimulation _value;};";
+							expression="if !(is3DEN) then {_this enablesimulationglobal _value;};";
 							class Value
 							{
 								class data
@@ -37486,6 +37588,7 @@ class Mission
 					};
 					id=1089;
 					type="C_Nikos_aged";
+					atlOffset=0.20879364;
 					class CustomAttributes
 					{
 						class Attribute0
@@ -37510,7 +37613,7 @@ class Mission
 						class Attribute1
 						{
 							property="enableSimulation";
-							expression="if !(is3DEN) then {_this enablesimulation _value;};";
+							expression="if !(is3DEN) then {_this enablesimulationglobal _value;};";
 							class Value
 							{
 								class data
@@ -37570,7 +37673,7 @@ class Mission
 						class Attribute1
 						{
 							property="enableSimulation";
-							expression="if !(is3DEN) then {_this enablesimulation _value;};";
+							expression="if !(is3DEN) then {_this enablesimulationglobal _value;};";
 							class Value
 							{
 								class data
@@ -37630,7 +37733,7 @@ class Mission
 						class Attribute1
 						{
 							property="enableSimulation";
-							expression="if !(is3DEN) then {_this enablesimulation _value;};";
+							expression="if !(is3DEN) then {_this enablesimulationglobal _value;};";
 							class Value
 							{
 								class data
@@ -37690,7 +37793,7 @@ class Mission
 						class Attribute1
 						{
 							property="enableSimulation";
-							expression="if !(is3DEN) then {_this enablesimulation _value;};";
+							expression="if !(is3DEN) then {_this enablesimulationglobal _value;};";
 							class Value
 							{
 								class data
@@ -37750,7 +37853,7 @@ class Mission
 						class Attribute1
 						{
 							property="enableSimulation";
-							expression="if !(is3DEN) then {_this enablesimulation _value;};";
+							expression="if !(is3DEN) then {_this enablesimulationglobal _value;};";
 							class Value
 							{
 								class data
@@ -37810,7 +37913,7 @@ class Mission
 						class Attribute1
 						{
 							property="enableSimulation";
-							expression="if !(is3DEN) then {_this enablesimulation _value;};";
+							expression="if !(is3DEN) then {_this enablesimulationglobal _value;};";
 							class Value
 							{
 								class data
@@ -37870,7 +37973,7 @@ class Mission
 						class Attribute1
 						{
 							property="enableSimulation";
-							expression="if !(is3DEN) then {_this enablesimulation _value;};";
+							expression="if !(is3DEN) then {_this enablesimulationglobal _value;};";
 							class Value
 							{
 								class data
@@ -37930,7 +38033,7 @@ class Mission
 						class Attribute1
 						{
 							property="enableSimulation";
-							expression="if !(is3DEN) then {_this enablesimulation _value;};";
+							expression="if !(is3DEN) then {_this enablesimulationglobal _value;};";
 							class Value
 							{
 								class data
@@ -37990,7 +38093,7 @@ class Mission
 						class Attribute1
 						{
 							property="enableSimulation";
-							expression="if !(is3DEN) then {_this enablesimulation _value;};";
+							expression="if !(is3DEN) then {_this enablesimulationglobal _value;};";
 							class Value
 							{
 								class data
@@ -38050,7 +38153,7 @@ class Mission
 						class Attribute1
 						{
 							property="enableSimulation";
-							expression="if !(is3DEN) then {_this enablesimulation _value;};";
+							expression="if !(is3DEN) then {_this enablesimulationglobal _value;};";
 							class Value
 							{
 								class data
@@ -38110,7 +38213,7 @@ class Mission
 						class Attribute1
 						{
 							property="enableSimulation";
-							expression="if !(is3DEN) then {_this enablesimulation _value;};";
+							expression="if !(is3DEN) then {_this enablesimulationglobal _value;};";
 							class Value
 							{
 								class data
@@ -38170,7 +38273,7 @@ class Mission
 						class Attribute1
 						{
 							property="enableSimulation";
-							expression="if !(is3DEN) then {_this enablesimulation _value;};";
+							expression="if !(is3DEN) then {_this enablesimulationglobal _value;};";
 							class Value
 							{
 								class data
@@ -38230,7 +38333,7 @@ class Mission
 						class Attribute1
 						{
 							property="enableSimulation";
-							expression="if !(is3DEN) then {_this enablesimulation _value;};";
+							expression="if !(is3DEN) then {_this enablesimulationglobal _value;};";
 							class Value
 							{
 								class data
@@ -39283,6 +39386,726 @@ class Mission
 			{
 			};
 			id=1159;
+		};
+		class Item870
+		{
+			dataType="Marker";
+			position[]={3291.738,-4.1890086e-031,12945.599};
+			name="remove_1";
+			markerType="ELLIPSE";
+			type="ellipse";
+			fillName="Border";
+			a=12;
+			b=12;
+			drawBorder=1;
+			id=1174;
+			atlOffset=-2.1560292;
+		};
+		class Item871
+		{
+			dataType="Marker";
+			position[]={3274.1289,5.376773e+036,12943.462};
+			name="remove_2";
+			markerType="ELLIPSE";
+			type="ellipse";
+			fillName="Border";
+			a=12;
+			b=12;
+			drawBorder=1;
+			id=1175;
+			atlOffset=5.376773e+036;
+		};
+		class Item872
+		{
+			dataType="Marker";
+			position[]={3258.5227,2.0508227,12943.061};
+			name="remove_3";
+			markerType="ELLIPSE";
+			type="ellipse";
+			fillName="Border";
+			a=12;
+			b=12;
+			drawBorder=1;
+			id=1176;
+		};
+		class Item873
+		{
+			dataType="Marker";
+			position[]={3247.1843,2.0200763,12941.993};
+			name="remove_4";
+			markerType="ELLIPSE";
+			type="ellipse";
+			fillName="Border";
+			a=12;
+			b=12;
+			drawBorder=1;
+			id=1177;
+		};
+		class Item874
+		{
+			dataType="Object";
+			class PositionInfo
+			{
+				position[]={3267.9631,5.4446158,12942.597};
+				angles[]={0,3.1107714,0};
+			};
+			side="Empty";
+			flags=5;
+			class Attributes
+			{
+			};
+			id=1178;
+			type="Land_MilOffices_V1_F";
+		};
+		class Item875
+		{
+			dataType="Marker";
+			position[]={3262.3853,5.376773e+036,12930.176};
+			name="remove_5";
+			markerType="ELLIPSE";
+			type="ellipse";
+			fillName="Border";
+			a=12;
+			b=12;
+			drawBorder=1;
+			id=1179;
+			atlOffset=5.376773e+036;
+		};
+		class Item876
+		{
+			dataType="Marker";
+			position[]={3281.1995,5.376773e+036,12933.25};
+			name="remove_6";
+			markerType="ELLIPSE";
+			type="ellipse";
+			fillName="Border";
+			a=12;
+			b=12;
+			drawBorder=1;
+			id=1180;
+			atlOffset=5.376773e+036;
+		};
+		class Item877
+		{
+			dataType="Object";
+			class PositionInfo
+			{
+				position[]={3356.0845,4.7121248,12958.602};
+				angles[]={0,3.9324794,0};
+			};
+			side="Empty";
+			flags=1;
+			class Attributes
+			{
+			};
+			id=1182;
+			type="Land_BagBunker_Tower_F";
+			atlOffset=0.46234012;
+		};
+		class Item878
+		{
+			dataType="Object";
+			class PositionInfo
+			{
+				position[]={3343.0674,5.0058012,12969.468};
+				angles[]={0,3.9324794,0};
+			};
+			side="Empty";
+			flags=1;
+			class Attributes
+			{
+			};
+			id=1183;
+			type="Land_BagBunker_Tower_F";
+			atlOffset=0.46084833;
+		};
+		class Item879
+		{
+			dataType="Object";
+			class PositionInfo
+			{
+				position[]={3280.0779,3.8014092,12930.668};
+				angles[]={0.0016194459,3.1132712,0};
+			};
+			side="Empty";
+			flags=4;
+			class Attributes
+			{
+				skill=0.60000002;
+				init="this allowDamage false; this enableSimulation false;";
+			};
+			id=1184;
+			type="Land_CncWall4_F";
+			atlOffset=0.03700161;
+			class CustomAttributes
+			{
+				class Attribute0
+				{
+					property="allowDamage";
+					expression="_this allowdamage _value;";
+					class Value
+					{
+						class data
+						{
+							class type
+							{
+								type[]=
+								{
+									"BOOL"
+								};
+							};
+							value=0;
+						};
+					};
+				};
+				nAttributes=1;
+			};
+		};
+		class Item880
+		{
+			dataType="Object";
+			class PositionInfo
+			{
+				position[]={3304.6563,2.0379627,12943.223};
+				angles[]={0,3.102381,0};
+			};
+			side="Empty";
+			flags=5;
+			class Attributes
+			{
+			};
+			id=1186;
+			type="Land_i_Barracks_V1_F";
+		};
+		class Item881
+		{
+			dataType="Object";
+			class PositionInfo
+			{
+				position[]={11241.52,52.438007,15701.429};
+				angles[]={0,2.7978308,0};
+			};
+			side="Empty";
+			flags=5;
+			class Attributes
+			{
+			};
+			id=1187;
+			type="Land_Billboard_F";
+		};
+		class Item882
+		{
+			dataType="Object";
+			class PositionInfo
+			{
+				position[]={11220.254,51.821259,15693.722};
+				angles[]={6.276526,6.0346451,6.2671871};
+			};
+			side="Empty";
+			flags=4;
+			class Attributes
+			{
+			};
+			id=1188;
+			type="Land_HBarrier_5_F";
+		};
+		class Item883
+		{
+			dataType="Object";
+			class PositionInfo
+			{
+				position[]={11214.973,51.970528,15692.375};
+				angles[]={6.2765174,6.0346451,6.2525291};
+			};
+			side="Empty";
+			flags=4;
+			class Attributes
+			{
+			};
+			id=1189;
+			type="Land_HBarrier_5_F";
+		};
+		class Item884
+		{
+			dataType="Object";
+			class PositionInfo
+			{
+				position[]={11212.972,52.011658,15689.727};
+				angles[]={6.2671871,4.5013633,6.2525291};
+			};
+			side="Empty";
+			flags=4;
+			class Attributes
+			{
+			};
+			id=1190;
+			type="Land_HBarrier_5_F";
+			atlOffset=-3.8146973e-006;
+		};
+		class Item885
+		{
+			dataType="Object";
+			class PositionInfo
+			{
+				position[]={11213.779,51.913803,15685.158};
+				angles[]={6.2671871,4.5013633,6.2525291};
+			};
+			side="Empty";
+			flags=4;
+			class Attributes
+			{
+			};
+			id=1191;
+			type="Land_HBarrier_5_F";
+		};
+		class Item886
+		{
+			dataType="Object";
+			class PositionInfo
+			{
+				position[]={11214.926,51.837742,15679.772};
+				angles[]={6.2778478,4.5013633,6.2591896};
+			};
+			side="Empty";
+			flags=4;
+			class Attributes
+			{
+			};
+			id=1192;
+			type="Land_HBarrier_5_F";
+		};
+		class Item887
+		{
+			dataType="Object";
+			class PositionInfo
+			{
+				position[]={11216.075,51.795563,15674.455};
+				angles[]={0.019996032,4.5013633,6.2591896};
+			};
+			side="Empty";
+			flags=4;
+			class Attributes
+			{
+			};
+			id=1193;
+			type="Land_HBarrier_5_F";
+		};
+		class Item888
+		{
+			dataType="Object";
+			class PositionInfo
+			{
+				position[]={11217.172,51.873184,15669.183};
+				angles[]={0.018663859,4.5013633,6.2605205};
+			};
+			side="Empty";
+			flags=4;
+			class Attributes
+			{
+			};
+			id=1194;
+			type="Land_HBarrier_5_F";
+		};
+		class Item889
+		{
+			dataType="Object";
+			class PositionInfo
+			{
+				position[]={11218.3,51.928078,15663.82};
+				angles[]={0.013332055,4.5013633,6.2605233};
+			};
+			side="Empty";
+			flags=4;
+			class Attributes
+			{
+			};
+			id=1195;
+			type="Land_HBarrier_5_F";
+		};
+		class Item890
+		{
+			dataType="Object";
+			class PositionInfo
+			{
+				position[]={11219.403,52.022266,15658.584};
+				angles[]={0.0066682254,4.5013633,6.1624427};
+			};
+			side="Empty";
+			flags=4;
+			class Attributes
+			{
+			};
+			id=1196;
+			type="Land_HBarrier_5_F";
+		};
+		class Item891
+		{
+			dataType="Object";
+			class PositionInfo
+			{
+				position[]={11220.571,51.982956,15653.175};
+				angles[]={0.0066682254,4.5013633,6.2778587};
+			};
+			side="Empty";
+			flags=4;
+			class Attributes
+			{
+			};
+			id=1197;
+			type="Land_HBarrier_5_F";
+		};
+		class Item892
+		{
+			dataType="Object";
+			class PositionInfo
+			{
+				position[]={11221.716,52.383137,15647.814};
+				angles[]={0.090419561,4.5013633,6.2645216};
+			};
+			side="Empty";
+			flags=4;
+			class Attributes
+			{
+			};
+			id=1198;
+			type="Land_HBarrier_5_F";
+		};
+		class Item893
+		{
+			dataType="Object";
+			class PositionInfo
+			{
+				position[]={11222.889,52.692322,15642.528};
+				angles[]={0.030656165,4.5013633,6.2645216};
+			};
+			side="Empty";
+			flags=4;
+			class Attributes
+			{
+			};
+			id=1199;
+			type="Land_HBarrier_5_F";
+			atlOffset=-3.8146973e-006;
+		};
+		class Item894
+		{
+			dataType="Object";
+			class PositionInfo
+			{
+				position[]={11223.709,52.926365,15638.924};
+				angles[]={0.089096971,4.5013633,6.2060056};
+			};
+			side="Empty";
+			flags=4;
+			class Attributes
+			{
+			};
+			id=1200;
+			type="Land_HBarrier_5_F";
+		};
+		class Item895
+		{
+			dataType="Object";
+			class PositionInfo
+			{
+				position[]={11226.434,52.775696,15638.251};
+				angles[]={0.089096971,2.6096349,6.2060056};
+			};
+			side="Empty";
+			flags=4;
+			class Attributes
+			{
+			};
+			id=1201;
+			type="Land_HBarrier_5_F";
+		};
+		class Item896
+		{
+			dataType="Object";
+			class PositionInfo
+			{
+				position[]={11231.325,52.630623,15640.903};
+				angles[]={0.030656165,2.6332781,6.2765174};
+			};
+			side="Empty";
+			flags=4;
+			class Attributes
+			{
+			};
+			id=1202;
+			type="Land_HBarrier_5_F";
+		};
+		class Item897
+		{
+			dataType="Object";
+			class PositionInfo
+			{
+				position[]={11236.079,52.537197,15643.604};
+				angles[]={0.029324362,2.6259427,0.0053265258};
+			};
+			side="Empty";
+			flags=4;
+			class Attributes
+			{
+			};
+			id=1203;
+			type="Land_HBarrier_5_F";
+		};
+		class Item898
+		{
+			dataType="Object";
+			class PositionInfo
+			{
+				position[]={11240.711,52.40844,15646.2};
+				angles[]={0.074528553,2.6259427,0.0013372133};
+			};
+			side="Empty";
+			flags=4;
+			class Attributes
+			{
+			};
+			id=1204;
+			type="Land_HBarrier_5_F";
+		};
+		class Item899
+		{
+			dataType="Object";
+			class PositionInfo
+			{
+				position[]={11245.531,52.225063,15648.904};
+				angles[]={0.074528553,2.6259427,0.0053377044};
+			};
+			side="Empty";
+			flags=4;
+			class Attributes
+			{
+			};
+			id=1205;
+			type="Land_HBarrier_5_F";
+		};
+		class Item900
+		{
+			dataType="Object";
+			class PositionInfo
+			{
+				position[]={11250.261,52.183163,15651.535};
+				angles[]={0.054611389,2.6259427,0};
+			};
+			side="Empty";
+			flags=4;
+			class Attributes
+			{
+			};
+			id=1206;
+			type="Land_HBarrier_5_F";
+		};
+		class Item901
+		{
+			dataType="Object";
+			class PositionInfo
+			{
+				position[]={11255.05,52.221233,15654.212};
+				angles[]={0.045302324,2.6259427,0.033322938};
+			};
+			side="Empty";
+			flags=4;
+			class Attributes
+			{
+			};
+			id=1207;
+			type="Land_HBarrier_5_F";
+		};
+		class Item902
+		{
+			dataType="Object";
+			class PositionInfo
+			{
+				position[]={11258.252,52.085484,15656.054};
+				angles[]={0.071875811,2.6259427,6.2312331};
+			};
+			side="Empty";
+			flags=4;
+			class Attributes
+			{
+			};
+			id=1208;
+			type="Land_HBarrier_5_F";
+		};
+		class Item903
+		{
+			dataType="Object";
+			class PositionInfo
+			{
+				position[]={11259.581,51.889416,15659.733};
+				angles[]={6.2791886,1.2436258,0.023993526};
+			};
+			side="Empty";
+			flags=4;
+			class Attributes
+			{
+			};
+			id=1209;
+			type="Land_HBarrier_5_F";
+		};
+		class Item904
+		{
+			dataType="Object";
+			class PositionInfo
+			{
+				position[]={11257.906,51.825657,15664.614};
+				angles[]={0.0053377044,1.2436258,0.02399601};
+			};
+			side="Empty";
+			flags=4;
+			class Attributes
+			{
+			};
+			id=1210;
+			type="Land_HBarrier_5_F";
+		};
+		class Item905
+		{
+			dataType="Object";
+			class PositionInfo
+			{
+				position[]={11256.167,51.788826,15669.604};
+				angles[]={0.0013372133,1.2436258,0.0066682254};
+			};
+			side="Empty";
+			flags=4;
+			class Attributes
+			{
+			};
+			id=1211;
+			type="Land_HBarrier_5_F";
+		};
+		class Item906
+		{
+			dataType="Object";
+			class PositionInfo
+			{
+				position[]={11254.431,51.770504,15674.66};
+				angles[]={0.0013372133,1.2436258,0.0066682254};
+			};
+			side="Empty";
+			flags=4;
+			class Attributes
+			{
+			};
+			id=1212;
+			type="Land_HBarrier_5_F";
+		};
+		class Item907
+		{
+			dataType="Object";
+			class PositionInfo
+			{
+				position[]={11252.658,51.758236,15679.768};
+				angles[]={0,1.2436258,0.0066592805};
+			};
+			side="Empty";
+			flags=4;
+			class Attributes
+			{
+			};
+			id=1213;
+			type="Land_HBarrier_5_F";
+		};
+		class Item908
+		{
+			dataType="Object";
+			class PositionInfo
+			{
+				position[]={11250.9,51.728119,15684.823};
+				angles[]={0.0053265258,1.2436258,0};
+			};
+			side="Empty";
+			flags=4;
+			class Attributes
+			{
+			};
+			id=1214;
+			type="Land_HBarrier_5_F";
+		};
+		class Item909
+		{
+			dataType="Object";
+			class PositionInfo
+			{
+				position[]={11249.112,51.701939,15689.954};
+				angles[]={0.0053265258,1.2436258,6.2818484};
+			};
+			side="Empty";
+			flags=4;
+			class Attributes
+			{
+			};
+			id=1215;
+			type="Land_HBarrier_5_F";
+		};
+		class Item910
+		{
+			dataType="Object";
+			class PositionInfo
+			{
+				position[]={11247.267,51.560307,15695.063};
+				angles[]={0.031988446,1.2436258,6.2751918};
+			};
+			side="Empty";
+			flags=4;
+			class Attributes
+			{
+			};
+			id=1216;
+			type="Land_HBarrier_5_F";
+		};
+		class Item911
+		{
+			dataType="Object";
+			class PositionInfo
+			{
+				position[]={11246.159,51.472172,15698.251};
+				angles[]={0.025325486,1.2436258,6.2751846};
+			};
+			side="Empty";
+			flags=4;
+			class Attributes
+			{
+			};
+			id=1217;
+			type="Land_HBarrier_5_F";
+		};
+		class Item912
+		{
+			dataType="Object";
+			class PositionInfo
+			{
+				position[]={11243.334,51.445553,15700.194};
+				angles[]={0.025325486,5.9446111,6.2751846};
+			};
+			side="Empty";
+			flags=4;
+			class Attributes
+			{
+			};
+			id=1218;
+			type="Land_HBarrier_5_F";
+		};
+		class Item913
+		{
+			dataType="Object";
+			class PositionInfo
+			{
+				position[]={11241.063,51.491886,15699.461};
+				angles[]={0.025327841,2.8311386,6.2685165};
+			};
+			side="Empty";
+			flags=4;
+			class Attributes
+			{
+			};
+			id=1219;
+			type="Land_HBarrier_5_F";
 		};
 	};
 };
