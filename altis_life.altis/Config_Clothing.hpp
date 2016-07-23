@@ -261,7 +261,9 @@ class Clothing {
         license = "";
         side = "civ";
         uniforms[] = {
-            { "NONE", "Remove Uniform", 0, { "", "", -1 } }
+            { "NONE", "Remove Uniform", 0, { "", "", -1 } },
+            { "U_C_Poor_1", "", 25, { "", "", -1 } },
+			{ "U_I_C_Soldier_Bandit_3_F", "", 50, { "", "", -1 } }
         };
         headgear[] = {
             { "NONE", "Remove Hat", 0, { "", "", -1 } }
@@ -328,7 +330,6 @@ class Clothing {
             { "U_I_CombatUniform", "", 20000, { "", "", -1 } },
             { "U_I_CombatUniform_tshirt", "", 20000, { "", "", -1 } },
             { "U_I_CombatUniform_shortsleeve", "", 20000, { "", "", -1 } },
-            { "U_O_V_Soldier_Viper_hex_F", "", 300000, { "", "", -1 } },
             { "U_O_GhillieSuit", "", 50000, { "", "", -1 } },
             { "U_I_GhillieSuit", "", 50000, { "", "", -1 } }
         };
