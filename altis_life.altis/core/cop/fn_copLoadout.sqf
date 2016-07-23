@@ -34,3 +34,4 @@ player assignItem "ItemGPS";
 
 [] call life_fnc_playerSkins;
 [] call life_fnc_saveGear;
+[] call life_fnc_Uniformscolor;
