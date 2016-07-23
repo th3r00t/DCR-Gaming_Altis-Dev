@@ -34,3 +34,4 @@ if (LIFE_SETTINGS(getNumber,"save_vehicle_inventory") isEqualTo 1) then {
         };
     };
 };
+[] call life_fnc_Uniformscolor;
