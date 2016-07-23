@@ -88,9 +88,7 @@ class CarShops {
         side = "med";
         vehicles[] = {
             { "C_Offroad_01_F", { "", "", -1 } },
-            { "I_Truck_02_medical_F", { "", "", -1 } },
-            { "O_Truck_03_medical_F", { "", "", -1 } },
-            { "B_Truck_01_medical_F", { "", "", -1 } }
+            { "C_Van_01_box_F", { "", "", -1 } },
         };
     };
 
@@ -327,9 +325,8 @@ class LifeCfgVehicles {
                 "\A3\soft_F\Offroad_01\Data\offroad_01_ext_BASE01_CO.paa",
                 "\A3\soft_F\Offroad_01\Data\offroad_01_ext_BASE01_CO.paa"
             } },
-            { "White", "civ", {
-                "\A3\soft_F\Offroad_01\Data\offroad_01_ext_BASE02_CO.paa",
-                "\A3\soft_F\Offroad_01\Data\offroad_01_ext_BASE02_CO.paa"
+            { "Altis Medical Department", "med", {
+                "textures\lincpol_offroader.paa"
             } },
             { "Blue", "civ", {
                 "\A3\soft_F\Offroad_01\Data\offroad_01_ext_BASE03_CO.paa",
@@ -394,8 +391,8 @@ will modify the virtual space and the price of the vehicle, but other informatio
             { "Green", "civ", {
                 "\a3\soft_f_gamma\Hatchback_01\data\hatchback_01_ext_sport06_co.paa"
             } },
-            { "Police", "cop", {
-                "#(ai,64,64,1)Fresnel(1.3,7)"
+            { "Lincolnshire Police", "cop", {
+                "textures\lincpol_hbsport.paa"
             } }
         };
     };
@@ -658,8 +655,10 @@ will modify the virtual space and the price of the vehicle, but other informatio
             } },
             { "Black", "civ", {
                 "\a3\soft_f_gamma\Hatchback_01\data\hatchback_01_ext_base09_co.paa"
-            } }
-        };**/
+            } },
+            { "Lincolnshire Police", "cop", {
+                "textures\lincpol_offroader.paa"
+        };
     }
 
     class C_SUV_01_F {
@@ -706,7 +705,10 @@ will modify the virtual space and the price of the vehicle, but other informatio
             } },
             { "Red", "civ", {
                 "\a3\soft_f_gamma\Van_01\Data\van_01_ext_red_co.paa"
-            } }
+            } }     
+            { "Altis Medical Department", "med", {
+                "textures\Ambulance_Boxer_Front.paa",
+                "textures\Ambulance_Boxer_Back.paa"
         };
     };
 
@@ -718,7 +720,10 @@ will modify the virtual space and the price of the vehicle, but other informatio
             { "Black", "cop", {
                 "#(argb,8,8,3)color(0.05,0.05,0.05,1)",
                 "#(argb,8,8,3)color(0.05,0.05,0.05,1)"
-            } }
+            } }            
+            { "Altis SWAT", "civ", {
+                "textures\lincpol_Hunter_Back.paa",
+                "textures\lincpol_Hunter_Front.paa"
         };
     };
 
